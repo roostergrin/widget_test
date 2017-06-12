@@ -1,4 +1,4 @@
-# Rooster Grin Widget Test
+# Rooster Grin Take Home - Build a Widget
 Your mission, should you choose to accept it, is to write a simple little widget.   
 This widget needs to be deployable as a snippet of code to many different websites that you do not have access to.    
 You'll find the snippet just above the closing </body> tag of the index.html file.   
