@@ -9,10 +9,10 @@ You've been supplied with three separate html files. This widget should work equ
 2. On page load, a small call-to-action button in the bottom left hand corner of the screen, saying something like, 'click me!' is rendered.
 3. When the button is clicked, it disappears and a div is rendered on top of the website in the center of the page that says something like, 'I've been clicked!'   
 4. Make certain the js you write in widget.js won't conflict with any js that may be written on the site.
-5. Deal with edge cases that you are likely to run into, including but not limited:
-⋅⋅* Malformed HTML.
-⋅⋅* Conflicting javascript
-⋅⋅* Old jQuery
+5. Deal with edge cases that you are likely to run into, including but not limited:   
+⋅⋅1. Malformed HTML.   
+⋅⋅2. Conflicting javascript   
+⋅⋅3. Old jQuery
 
 Things to think about:
 * **Do not** edit the index.html file directly; however, feel free to change it programmatically from `widget.js`, but be gentle.
