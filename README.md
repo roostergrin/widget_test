@@ -1,4 +1,5 @@
-# Rooster Grin Widget Test
+# Rooster Grin Take Home - Build a Widget
+
 Your mission, should you choose to accept it, is to write a simple little widget.   
 This widget needs to be deployable as a snippet of code to many different websites that you do not have access to.    
 You've been supplied with three separate html files. This widget should work equally well on all three.
@@ -14,7 +15,7 @@ You've been supplied with three separate html files. This widget should work equ
 ⋅⋅* Old jQuery
 
 Things to think about:
-* DO NOT edit the index.html file directly. Feel free to change it programmatically from widget.js, but be gentle.
+* **Do not** edit the index.html file directly; however, feel free to change it programmatically from `widget.js`, but be gentle.
 * Feel free to use jQuery but don't assume it's already loaded on the target website.
 * You're welcome to add a stylesheet to style your widget and modal if you like.
 
