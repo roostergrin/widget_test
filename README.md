@@ -2,18 +2,27 @@
 
 Your mission, should you choose to accept it, is to write a simple little widget.   
 This widget needs to be deployable as a snippet of code to many different websites that you do not have access to.    
-You'll find the snippet just above the closing `</body>` tag of the index.html file.
+Imagine that it is your job to give the webmaster of a site this little piece of code:   
+```html
+<div id="__widget"></div>
+<script src="widget.js" type="text/javascript"></script>
+```
+Imagine widget.js is being sourced from a CDN and you have no idea what is happening in the code on the web page where this widget will be rendered.   
+You've been supplied with three separate html files. **This widget should work equally well on all three**.
 
-### This widget does two things:
-
-1. Renders a small call-to-action button in the bottom left hand corner of the screen reading 'click me!'.
-2. When the button is clicked, it disappears and a div/modal is rendered on top of the existing website in the center of the page. Feel free to add pictures and/or text to the modal as you see fit.
+### Requirements:
+1. This widget should render into the `div` with `id="__widget"`.
+2. On page load, a small call-to-action `button` in the bottom left hand corner of the screen, saying something like, 'click me!' is rendered.
+3. When the button is clicked, it disappears and a `div` is rendered on top of the website in the center of the page that says something like, 'I've been clicked!'   
+4. Make certain the js you write in `widget.js` won't conflict with any other js that may be written on the site.
+5. Deal with edge cases that you are likely to run into, including but not limited to:   
+  a. Malformed HTML.   
+  b. Conflicting javascript   
+  c. Old jQuery
 
 ### Things to think about:
+* **Do not** edit the index.html file directly; however, feel free to change it programmatically from `widget.js`, but be gentle.
+* Feel free to use jQuery but don't assume it's already loaded on the target website.
+* You're welcome to add a stylesheet to style your widget and modal if you like.
 
-* **Do not** edit the index.html file directly; however, feel free to change it programmatically from `widget.js`.
-* Make certain the code you write in `widget.js` won't conflict with any code that may be written on the site.
-* Feel free to use jQuery but don't assume it's already loaded on the target website. In the case of this assignment, it's not.
-* You're welcome to add a stylesheet to style your widget and modal but remember, do not edit `index.html` directly.
-
-This assignment is open ended. Feel free to go beyond the requirements listed but take no longer than 3 hours to complete it.
+This assignment is open-ended. Feel free to go beyond the requirements listed but take no longer than 3 hours to complete it.
